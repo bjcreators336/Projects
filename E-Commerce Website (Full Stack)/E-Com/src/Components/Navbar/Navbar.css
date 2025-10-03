@@ -4,12 +4,12 @@
   border-radius: border-box;
 }
 .Nav {
+  position: relative;
   height: 4rem;
   width: 100vw;
   display: flex;
-  align-items: center; /* This will vertically center the content */
-  /* background-color: antiquewhite; */
-  /* color: wheat; */
+  align-items: center;
+  justify-content: space-between;
 }
 .home {
   margin-left: 1rem;
@@ -20,11 +20,17 @@
 }
 
 .nav-items {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   height: 3rem;
   width: 20rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .nav-items a {
@@ -40,17 +46,7 @@
   border-bottom: 3px solid royalblue;
 }
 
-.nav-items {
-  margin-left: 11rem;
-  margin-right: 1rem;
-  display: flex;
-  gap: 2rem;
-  font-size: 1.2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
 .nav-icons {
-  margin-left: auto;
   margin-right: 1rem;
   display: flex;
   gap: 1rem;

@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.projects-main-div {
+  height: 100rem;
+  width: 100vw;
+  background-color: #f2f2f2;
+}
+
+.projects-headings {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.projects-main-headings {
+  padding-top: 3rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-main-text {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Source Sans 3", sans-serif;
+}
+.projects-main-text2 {
+  height: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: #0077b6;
+  margin-top: 0.5rem;
+  width: 60%;
+  font-size: 1.45rem;
+  margin-left: 7.5rem;
+}
+.projects-main-text3 {
+  background-color: antiquewhite;
+  margin-left: 20rem;
+  font-size: 1.15rem;
+  width: 33rem;
+  justify-content: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  display: flex;
+  margin-top: 0.5rem;
+}
+.a1 {
+  color: #0077b6;
+}
+
+.projects-display {
+  position: relative;
+  height: 15rem;
+  width: 80vw;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+}
+
+.projects-display:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------------------ */
+/* NEW STYLES: Centering text over the image */
+/* ------------------------------------------------ */
+.centered-project-text {
+  /* Positioning context is its parent: .projects-display */
+  position: absolute;
+  top: 50%; /* Start 50% down from the top */
+  left: 50%; /* Start 50% from the left */
+  /* Shift the element back by half its own width/height to perfectly center it */
+  transform: translate(-50%, -50%);
+  /* Ensure it is above the image (z-index: 1) but below the hover overlay (.back-face z-index: 2 or higher) */
+  z-index: 10;
+  /* color: white; Choose a color that stands out against the dark code image */
+  text-align: center;
+  /* Add a shadow for better readability over the image */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  width: 90%; /* Limit text width so it doesn't hit the edges */
+  transition: opacity 0.5s ease-out;
+}
+
+.projects-display:hover .centered-project-text {
+  opacity: 0;
+}
+/* ------------------------------------------------ */
+
+/* We'll repurpose back-face as the overlay */
+.back-face {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(26, 42, 58, 0.8); /* Semi-transparent background */
+  transform: translateY(100%); /* Start below the container */
+  transition: transform 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 20; /* Higher z-index to cover the centered text on hover */
+}
+
+.projects-display:hover .back-face {
+  transform: translateY(0);
+}
+
+.front-face {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.code-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px);
+}
+
+.projects-display:hover .code-img {
+  filter: blur(5px);
+}
+
+.projects-display-main {
+  height: 70rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.p1-text {
+  /* This style block is no longer needed since we moved the text */
+  /* Keeping it here for completeness but the element is removed from HTML */
+  color: #f2f2f2;
+  margin-top: 0;
+  color: #36454f;
+  text-align: center;
+}
+.more-details {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Arial, Helvetica, sans-serifs;
+}
+.live-btn {
+  height: 2.5rem;
+  width: 8rem;
+  background-color: #ff304f;
+  border-radius: 25px;
+}
+.a {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f2f2f2;
+}
+.b {
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+}

@@ -1,0 +1,387 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.About {
+  height: 120rem;
+  width: 100vw;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.about-name-profession {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.25;
+}
+.Who-Am-I {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  width: 100vw;
+}
+.question-mark {
+  font-size: 15rem;
+  font-family: "Cinzel", serif;
+  text-decoration: none;
+  color: black;
+  margin-top: 1rem;
+  margin-left: -0.7rem;
+}
+.Who-Am-I-text {
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -2rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.Who-Am-I-link {
+  text-decoration: none;
+  color: black;
+}
+.My-Discription-div {
+  border-radius: 25px;
+  line-height: 1.5;
+  height: 10rem;
+  width: 75vw;
+  margin-top: 15rem;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.Qualification {
+  height: 50rem;
+  width: 100vw;
+  display: flex;
+}
+.Qualification-text {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 1.65rem;
+  color: black;
+}
+.Qualification-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #eee;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.Qualification-icon {
+  color: black;
+  font-size: 5rem;
+  margin-left: 3.5rem;
+}
+.Qualification-description {
+  /* color: black; */
+  height: 20rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+  margin-top: 3rem;
+}
+.Qualification-discription-section {
+  height: 25rem;
+  width: 30vw;
+  border: 1px solid #34d844;
+  text-decoration: none;
+
+  margin-top: 2rem;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pgc-logo {
+  height: 10rem;
+  width: 10rem;
+  text-decoration: none;
+}
+
+.bq-logo {
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+.PGC-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  line-height: 1.25;
+  color: black;
+  text-decoration: underline;
+}
+.PGC-section :hover {
+  /* transform: translateY(-10px);.} */
+  scale: 1.05;
+}
+.VU-section :hover {
+  /* transform: translateY(-10px);.} */
+  scale: 1.05;
+}
+.BQ-section :hover {
+  /* transform: translateY(-10px);.} */
+  scale: 1.05;
+}
+.VU-section {
+  text-decoration: underline;
+  color: black;
+  display: flex;
+  line-height: 1.25;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2.5rem;
+  margin-bottom: 6rem;
+}
+.BQ-section {
+  text-decoration: underline;
+  display: flex;
+  color: black;
+  line-height: 1.25;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1rem; */
+  margin-bottom: 1.25rem;
+}
+.SkillSet {
+  margin-top: 4rem;
+  height: 50rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.SkillSet-heading {
+  height: 14rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  background-color: #eee;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.SkillSet-logo {
+  height: 14rem;
+  width: 14rem;
+  margin-top: -2.25rem;
+}
+.SkillSet-text {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: black;
+  margin-top: -2.5rem;
+  margin-left: 4rem;
+}
+.SkillSet-buttons {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5rem;
+  width: 100vw;
+  /* background-color: aquamarine; */
+}
+.SkillSet-item {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 25px; /* margin-top: 1rem; */
+  transition: all 0.4s ease-in-out;
+}
+
+#html .fa-html5 {
+  color: orange;
+
+  font-size: 2.5rem;
+  margin-right: -0.25rem;
+}
+#html {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+#css .fa-css3 {
+  color: aqua;
+  font-size: 2.5rem;
+}
+#css {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+#js .fa-js {
+  color: yellow;
+  font-size: 2.5rem;
+  margin-right: 0.125rem;
+}
+#js {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+#react .fa-react {
+  color: blue;
+
+  font-size: 2.5rem;
+}
+#react {
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+#bootstrap .fa-bootstrap {
+  color: purple;
+
+  font-size: 2.5rem;
+}
+#bootstrap {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+#nodeJs .fa-node-js {
+  color: green;
+
+  font-size: 2.5rem;
+}
+#nodeJs {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+#express .fa-node-js {
+  color: green;
+
+  font-size: 2.5rem;
+}
+#express {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+#github .fa-github {
+  color: black;
+
+  font-size: 2.5rem;
+}
+#github {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+#mongodb {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+  /* background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 25px; */
+}
+.mongodb {
+  font-size: 3rem;
+  color: #47a248;
+}
+
+#git .fa-git-alt {
+  color: #e4080a;
+  font-size: 3rem;
+}
+#git {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+#figma .fa-figma {
+  color: brown;
+  font-size: 2.5rem;
+}
+#figma {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+#python .fa-python {
+  color: #4682b4;
+  font-size: 2.5rem;
+}
+#python {
+  font-weight: 800;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+
+#photoshop {
+  font-weight: 800;
+  width: 11rem;
+  height: 4rem;
+  font-size: 1.25rem;
+}
+.photoshop {
+  font-size: 2.5rem;
+  color: black;
+  background-color: #00bfff;
+  border-radius: 7.5px;
+  margin-right: 0.5rem;
+}
+#illustrator {
+  font-weight: 800;
+  height: 4rem;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+.illustrator {
+  font-size: 2.5rem;
+  color: black;
+  background-color: orange;
+  border-radius: 7.5px;
+  margin-right: 0.5rem;
+}
+#canva {
+  font-weight: 800;
+  height: 4.5rem;
+  width: 11rem;
+  font-size: 1.25rem;
+}
+.canva {
+  font-size: 3rem;
+  color: black;
+  background-color: #00bfff;
+  border-radius: 25px;
+  margin-right: 0.5rem;
+}
+#creativeCloud {
+  font-weight: 800;
+  height: 4.5rem;
+  width: 13rem;
+  font-size: 1.25rem;
+}
+.creativeCloud {
+  font-size: 3rem;
+  color: red;
+  /* background-color: #00bfff; */
+  border-radius: 25px;
+  margin-right: 0.5rem;
+}
+.SkillSet-item:hover {
+  transform: scale(1.1);
+}
