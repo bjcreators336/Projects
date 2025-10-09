@@ -15,9 +15,15 @@
   margin-left: 1rem;
   text-decoration: none;
   color: black;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.35s ease-out;
 }
+
+.home:hover {
+  transform: scale(1.1);
+  color: #60a5fa;}
+
 
 .nav-items {
   position: absolute;
@@ -42,7 +48,6 @@
 }
 .nav-items a:hover {
   transform: translateY(-10px) scale(1.1);
-  /* text-shadow: 0 0 10px seagreen; */
   border-bottom: 3px solid royalblue;
 }
 
